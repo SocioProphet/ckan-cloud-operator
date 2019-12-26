@@ -1,0 +1,5 @@
+pyyaml
+httpagentparser
+requests
+ruamel.yaml
+boto3
