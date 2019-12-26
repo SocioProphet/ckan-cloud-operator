@@ -1,4 +1,3 @@
-# this file reflects the install_requiress from setup.py
 httpagentparser
 boto3
 psycopg2
