@@ -8,7 +8,7 @@ RUN conda env create -f /environment.yaml
 RUN cat /root/bashrc.inc >> ~/.bashrc
 COPY ckan_cloud_operator /usr/src/ckan-cloud-operator/ckan_cloud_operator
 COPY tests /usr/src/ckan-cloud-operator/tests
-COPY *.sh *.py /usr/src/ckan-cloud-operator/
+COPY *.sh *.py requirements.in /usr/src/ckan-cloud-operator/
 RUN . /opt/conda/etc/profile.d/conda.sh && conda activate ckan-cloud-operator &&\
     cd /usr/src/ckan-cloud-operator && python3 -m pip install -e . &&\
     chmod +x /usr/src/ckan-cloud-operator/*.sh
