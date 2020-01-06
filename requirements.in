@@ -1,7 +1,7 @@
 httpagentparser
 boto3
 psycopg2
-pyyaml<5.2,>=3.10
+pyyaml<=5.2,>=3.10
 kubernetes
 click
 toml
@@ -9,6 +9,6 @@ awscli
 urllib3<1.25
 ruamel.yaml<1
 requests==2.21
-python-dateutil<2.8.1
+python-dateutil<3
 botocore
 
